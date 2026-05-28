@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomken Dental — Smile! Your Oral Health Is In Good Hands.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="tomken-styles.css" />
+</head>
+
+<body>
+
+  <!-- ================================================================
+     NAVIGATION
+     ================================================================ -->
+  <div class="nav-wrap" id="navWrap">
+    <nav class="nav-pill">
+
+      <a href="#" class="nav-brand">
+        <img src="assets/tomken-logo.webp" alt="Tomken Centre Dentistry" class="nav-brand-logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#booking">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#booking" class="nav-cta">Request Appointment</a>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round">
+            <line x1="4" y1="8" x2="20" y2="8" />
+            <line x1="4" y1="16" x2="20" y2="16" />
+          </svg>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Mobile overlay menu -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-header">
+      <div class="nav-overlay-brand">
+        <img src="assets/tomken-logo.webp" alt="Tomken Centre Dentistry" class="nav-overlay-logo" />
+      </div>
+      <button class="nav-overlay-close" id="navClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav-overlay-links">
+      <a href="#" onclick="closeMenu()">Home</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#doctors" onclick="closeMenu()">Doctors</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#reviews" onclick="closeMenu()">Reviews</a>
+      <a href="#booking" onclick="closeMenu()">Contact</a>
+    </nav>
+
+    <div class="nav-overlay-footer">
+      <div class="nav-overlay-phone">
+        <strong>647-931-2977</strong>
+        Call us anytime
+      </div>
+      <a href="#booking" class="btn btn-md btn-white" onclick="closeMenu()">
+        Book Appointment
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ================================================================
+     HERO
+     ================================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-frame">
+      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/dentalclinic.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="hero-body">
+      <h1 class="hero-headline anim-fade-up delay-2">
+        <span class="smile">Smile!</span>
+        Your oral health is in good hands.
+      </h1>
+
+      <div class="hero-right">
+        <span class="eyebrow-pill eyebrow-pill-ghost anim-fade-up delay-1">Mississauga · Since 2003</span>
+
+        <p class="hero-sub anim-fade-up delay-3">
+          We've been caring for our community's smiles for more than 20&nbsp;years.
+          Compassionate, modern dentistry for you and the people you love.
+        </p>
+
+        <div class="hero-cta-row anim-fade-up delay-4">
+          <a href="#booking" class="btn btn-lg btn-white">
+            Request an Appointment
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+
+          <div class="social-proof">
+            <div class="avatars">
+              <img src="https://i.pravatar.cc/80?img=12" alt="" />
+              <img src="https://i.pravatar.cc/80?img=32" alt="" />
+              <img src="https://i.pravatar.cc/80?img=47" alt="" />
+              <img src="https://i.pravatar.cc/80?img=68" alt="" />
+            </div>
+            <div class="proof-text">
+              Trusted by<br />
+              <strong>1,000+ Mississauga families</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     ABOUT (dark navy)
+     ================================================================ -->
+  <section class="about" id="about">
+
+    <!-- Background asterisk watermark -->
+
+    <div class="about-inner">
+      <span class="eyebrow-pill eyebrow-pill-ghost">About Us</span>
+
+      <p class="about-statement">
+        We believe dental care should be <span class="green">easy</span>
+        and <span class="highlight">comfortable</span> to you,
+        because <span class="highlight">your health and confidence</span> matter.
+      </p>
+
+      <div class="about-stats">
+        <div>
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Years of experience</div>
+        </div>
+        <div>
+          <div class="stat-num">1k+</div>
+          <div class="stat-label">Patients served</div>
+        </div>
+        <div>
+          <div class="stat-num">6</div>
+          <div class="stat-label">Days a week open</div>
+        </div>
+        <div>
+          <div class="stat-num">250+</div>
+          <div class="stat-label">Google reviews</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     SERVICES
+     ================================================================ -->
+  <section class="services" id="services">
+
+    <div class="section-header">
+      <div class="section-header-left">
+        <span class="eyebrow">Our Services</span>
+        <h2 class="section-title">Comprehensive care<br />for every smile.</h2>
+      </div>
+      <a href="#" class="btn btn-md btn-ghost" style="flex-shrink:0">
+        View all services
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="service-list">
+
+      <div class="service-card">
+        <div class="service-img"
+          style="background-image:url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&fit=crop')">
+        </div>
+        <div class="service-body">
+          <h3 class="service-name">Preventive Care</h3>
+          <p class="service-desc">Routine check-ups include a thorough examination to catch any issues early, while
+            gentle cleanings remove plaque and buildup — keeping your smile healthy at every stage.</p>
+          <div class="service-tags">
+            <span class="tag">Routine Check-Ups</span>
+            <span class="tag">Cleanings</span>
+            <span class="tag">Family & Children</span>
+            <span class="tag">Oral Cancer Screenings</span>
+            <span class="tag">Fluoride Treatments</span>
+          </div>
+          <a href="#" class="btn btn-sm btn-link" style="margin-top:var(--s-3)">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img"
+          style="background-image:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&fit=crop')">
+        </div>
+        <div class="service-body">
+          <h3 class="service-name">Restorative Treatments</h3>
+          <p class="service-desc">Restorative procedures repair teeth damaged by decay or injury, restoring their
+            strength, function, and natural appearance — including same-day options using our in-house CEREC technology.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Same-Day Crowns & Bridges</span>
+            <span class="tag">Composite Fillings</span>
+            <span class="tag">Dental Implants</span>
+            <span class="tag">Root Canal Therapy</span>
+            <span class="tag">Dentures</span>
+          </div>
+          <a href="#" class="btn btn-sm btn-link" style="margin-top:var(--s-3)">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img"
+          style="background-image:url('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80&fit=crop')">
+        </div>
+        <div class="service-body">
+          <h3 class="service-name">Cosmetic &amp; Aesthetic Services</h3>
+          <p class="service-desc">Whitening and aesthetic treatments are designed to enhance your smile by reducing
+            stains, discoloration, and minor imperfections — giving you the confidence to show it off.</p>
+          <div class="service-tags">
+            <span class="tag">Teeth Whitening</span>
+            <span class="tag">Invisalign®</span>
+            <span class="tag">Veneers</span>
+            <span class="tag">Same-Day Veneers</span>
+            <span class="tag">Dental Bonding</span>
+          </div>
+          <a href="#" class="btn btn-sm btn-link" style="margin-top:var(--s-3)">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img"
+          style="background-image:url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&fit=crop')">
+        </div>
+        <div class="service-body">
+          <h3 class="service-name">Advanced Technology</h3>
+          <p class="service-desc">We invest in leading technologies — CBCT scanner, CEREC same-day crowns, cloud-based
+            PrimeScan 2, and in-house lab — to ensure your smile receives tailored care with precision and efficiency.
+          </p>
+          <div class="service-tags">
+            <span class="tag">CEREC Same-Day</span>
+            <span class="tag">CBCT Scanner</span>
+            <span class="tag">PrimeScan 2</span>
+            <span class="tag">Sedation</span>
+            <span class="tag">Sleep Apnea</span>
+          </div>
+          <a href="#" class="btn btn-sm btn-link" style="margin-top:var(--s-3)">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     WHY TOMKEN
+     ================================================================ -->
+  <section class="why">
+    <div style="max-width:var(--container);margin:0 auto;">
+      <div class="sec-header centered">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2 class="sec-title" style="text-align:center;max-width:500px">Top reasons we could be perfect for your family.
+        </h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="why-heading">Wide Array of Services</h3>
+          <p class="why-body">Comprehensive general, restorative, and cosmetic dentistry under one roof — so your whole
+            family gets the care they need without referrals.</p>
+          <ul class="why-list">
+            <li>Preventive, cosmetic &amp; restorative care</li>
+            <li>Advanced in-house CEREC technology</li>
+            <li>Dental sedation for anxious patients</li>
+          </ul>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3 class="why-heading">Same-Day Treatments</h3>
+          <p class="why-body">Get your crown, bridge, or veneer in a single appointment thanks to our CEREC system. No
+            temporaries, no return visits — just a perfect smile before you leave.</p>
+          <ul class="why-list">
+            <li>Same-day crowns &amp; bridges (CEREC)</li>
+            <li>Same-day veneers &amp; whitening</li>
+            <li>Emergency dentistry available</li>
+          </ul>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3 class="why-heading">Comfort &amp; Convenience</h3>
+          <p class="why-body">Open 6 days a week with flexible hours, a multilingual team, and insurance filed for you.
+            We've made every part of your visit as smooth as possible.</p>
+          <ul class="why-list">
+            <li>Open Monday–Saturday</li>
+            <li>CDCP office · accepts all local insurance</li>
+            <li>Flexible financing &amp; easy pay plans</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     OUR DOCTORS
+     ================================================================ -->
+  <section class="doctors" id="doctors">
+    <div class="doctors-inner">
+
+      <div class="doctors-text">
+        <span class="eyebrow">Our Doctors</span>
+        <h2 class="doctors-heading">
+          Experienced.<br />
+          <em>Caring.</em><br />
+          Here for you.
+        </h2>
+        <p class="doctors-lead">
+          Our general dentists — Dr.&nbsp;Ahmed Al-Obaidi, Dr.&nbsp;Istabraq Jasim, and Dr.&nbsp;Omar Saddam — dedicate
+          themselves to providing a wide range of preventive, restorative, and cosmetic services with compassion and
+          clinical excellence.
+        </p>
+        <div class="doctors-cta-row">
+          <a href="#" class="btn btn-md btn-navy">
+            Meet the team
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="doctor-cards">
+
+        <!-- Featured: Dr. Ahmed (wide) -->
+        <div class="doctor-card">
+          <div class="doctor-photo" style="background-image:url('assets/Dr.-Ahmed-Ameen-Al-Obaidi-homepage.webp');">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Ahmed Ameen Al-Obaidi</h3>
+            <span class="doctor-role">General &amp; Restorative Dentist</span>
+            <p class="doctor-bio">With over 20 years of experience, Dr. Ahmed leads our team with a commitment to
+              patient-first care and advanced techniques including CEREC and digital imaging.</p>
+            <span class="badge badge-olive" style="margin-top:var(--s-2);align-self:start">Lead Dentist</span>
+          </div>
+        </div>
+
+        <!-- Dr. Istabraq -->
+        <div class="doctor-card">
+          <div class="doctor-photo" style="background-image:url('assets/Dr.-Istabraq-Jasim-homepage.webp');">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Istabraq Jasim</h3>
+            <span class="doctor-role">Cosmetic &amp; Preventive Dentist</span>
+            <p class="doctor-bio">Specializes in cosmetic treatments and pediatric care, ensuring every patient — from
+              children to adults — feels at ease.</p>
+          </div>
+        </div>
+
+        <!-- Dr. Omar -->
+        <div class="doctor-card">
+          <div class="doctor-photo" style="background-image:url('assets/Dr.-Omar-Saddam-homepage.webp');">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name">Dr. Omar Saddam</h3>
+            <span class="doctor-role">Implantology &amp; Oral Surgery</span>
+            <p class="doctor-bio">Expert in dental implants, oral surgery, and complex restorative cases — delivering
+              precision and compassionate care.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     REVIEWS
+     ================================================================ -->
+  <section class="reviews" id="reviews">
+    <div class="reviews-inner">
+
+      <div class="reviews-header">
+        <div>
+          <span class="eyebrow-pill eyebrow-pill-ghost" style="margin-bottom:var(--s-4);display:inline-flex">250+ Google
+            Reviews</span>
+          <h2 class="reviews-title">What our patients are saying.</h2>
+        </div>
+        <a href="#" class="btn btn-md"
+          style="background:rgba(255,255,255,0.10);color:var(--white);border:1px solid rgba(255,255,255,0.20);border-radius:var(--r-pill);padding:13px 22px;font-size:0.9375rem;font-weight:600;transition:background var(--dur) var(--ease);flex-shrink:0"
+          onmouseenter="this.style.background='rgba(255,255,255,0.18)'"
+          onmouseleave="this.style.background='rgba(255,255,255,0.10)'">
+          See all reviews →
+        </a>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="review-text">"Puneet is an exceptional hygienist — I got great dental care and education. The staff
+            is very helpful. Monique, Irene, Anjali are wonderful and so caring. I've been coming here for years."</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/80?img=11" alt="Ashutosh Garg" />
+            <div>
+              <div class="reviewer-name">Ashutosh Garg</div>
+              <div class="reviewer-meta">
+                6 months ago
+                <span class="google-badge">★ Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="review-text">"Loooove this place! Love Steph and Monique! I have been coming to this office for 34
+            years. I have received nothing but stellar service all the time. The whole team is incredible."</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/80?img=44" alt="Smita Thekkepat" />
+            <div>
+              <div class="reviewer-name">Smita Thekkepat</div>
+              <div class="reviewer-meta">
+                7 months ago
+                <span class="google-badge">★ Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <svg class="star" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="review-text">"This place is amazing! Dr. Puneet did an amazing job with my cleaning. She is very kid
+            friendly, professional and gentle with cleaning my teeth. Tomken Dental is top tier."</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/80?img=23" alt="Sunset Slimes" />
+            <div>
+              <div class="reviewer-name">Sunset Slimes</div>
+              <div class="reviewer-meta">
+                8 months ago
+                <span class="google-badge">★ Google</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     BOOKING FORM
+     ================================================================ -->
+  <section class="booking" id="booking">
+    <div class="booking-inner">
+
+      <div class="booking-visual">
+        <div class="booking-overlay">
+          <h2 class="booking-overlay-title">Book your visit today.</h2>
+          <p class="booking-overlay-sub">Select the time that works best for you.<br />Our team is here to make every
+            visit smooth and worry-free.</p>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <div class="booking-form-header">
+          <svg class="booking-form-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="2.5" width="12" height="12" rx="2.6" fill="#16325C" />
+            <rect x="17.5" y="2.5" width="12" height="12" rx="2.6" fill="#538A3E" />
+            <rect x="2.5" y="17.5" width="12" height="12" rx="2.6" fill="#538A3E" />
+            <rect x="17.5" y="17.5" width="12" height="12" rx="2.6" fill="#16325C" />
+          </svg>
+          <h2 class="booking-form-title">Schedule dental care</h2>
+        </div>
+
+        <div class="form-fields">
+          <div class="form-row">
+            <div class="field-group">
+              <label class="field-label" for="firstName">First Name</label>
+              <input class="field-input" id="firstName" type="text" placeholder="Your first name" />
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="lastName">Last Name</label>
+              <input class="field-input" id="lastName" type="text" placeholder="Your last name" />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="email">Email Address</label>
+            <input class="field-input" id="email" type="email" placeholder="your@email.com" />
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="phone">Phone Number</label>
+            <input class="field-input" id="phone" type="tel" placeholder="(647) 000-0000" />
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label class="field-label" for="date">Preferred Date</label>
+              <input class="field-input" id="date" type="date" />
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="treatment">Treatment</label>
+              <div class="field-select-wrap">
+                <select class="field-select field-input" id="treatment">
+                  <option value="" disabled selected>Select treatment</option>
+                  <option>Cleaning / Check-Up</option>
+                  <option>Teeth Whitening</option>
+                  <option>Invisalign® Consultation</option>
+                  <option>Dental Implants</option>
+                  <option>Emergency Visit</option>
+                  <option>Other / Not sure</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-lg btn-navy" style="width:100%">
+            Request an Appointment
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+          <p class="form-note" style="margin-top:var(--s-3);text-align:center">
+            We'll confirm your appointment within one business day. Call&nbsp;us at <strong
+              style="color:var(--gray-700)">647-931-2977</strong> for same-day availability.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+     FOOTER
+     ================================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/tomken-logo.webp" alt="Tomken Centre Dentistry" class="footer-brand-logo" />
+          </div>
+          <p class="footer-tagline">Caring for Mississauga smiles for over 20 years. Trusted, compassionate,
+            family-oriented dental care — open 6 days a week.</p>
+          <a href="tel:6479312977" class="footer-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 15.1 19.79 19.79 0 011.62 6.53 2 2 0 013.6 4.34h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 11.1a16 16 0 006 6l.98-.98a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.92 18.34z" />
+            </svg>
+            647-931-2977
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Doctors</a></li>
+            <li><a href="#">New Patients</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Tomken Plaza<br />925 Rathburn Rd E, Unit C1<br />Mississauga, ON L4W 4C3</a></li>
+            <li><a href="tel:6479312977">647-931-2977</a></li>
+            <li><a href="mailto:info@tomkendental.com">info@tomkendental.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <div class="footer-hours">
+            <div class="hour-row"><span class="day">Monday</span><span class="time">10am – 6pm</span></div>
+            <div class="hour-row"><span class="day">Tuesday</span><span class="time">10am – 6pm</span></div>
+            <div class="hour-row"><span class="day">Wednesday</span><span class="time">10am – 6pm</span></div>
+            <div class="hour-row"><span class="day">Thursday</span><span class="time">10am – 6pm</span></div>
+            <div class="hour-row"><span class="day">Friday</span><span class="time">10am – 5pm</span></div>
+            <div class="hour-row"><span class="day">Saturday</span><span class="time">10am – 3pm</span></div>
+            <div class="hour-row"><span class="day">Sunday</span><span class="time"
+                style="color:rgba(255,255,255,0.3)">Closed</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-assoc">
+        <span class="assoc-label">Member of</span>
+        <div class="assoc-logos">
+          <span class="assoc-logo">IAOMT — International Academy of Oral Medicine & Toxicology</span>
+          <span class="assoc-logo">ABOI — American Board of Oral Implantology</span>
+          <span class="assoc-logo">ODA — Ontario Dental Association</span>
+          <span class="assoc-logo">ICOI — International Congress of Oral Implantologists</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2024 Tomken Centre Dentistry. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ================================================================
+     FLOATING CALL BUTTON
+     ================================================================ -->
+  <a href="tel:6479312977" class="fab-call" aria-label="Call us at 647-931-2977">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path
+        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 15.1 19.79 19.79 0 011.62 6.53 2 2 0 013.6 4.34h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 11.1a16 16 0 006 6l.98-.98a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.92 18.34z" />
+    </svg>
+  </a>
+
+  <!-- ================================================================
+     JAVASCRIPT · Nav scroll + Mobile menu
+     ================================================================ -->
+  <script>
+    /* — Scroll: add .scrolled class to nav-wrap ——————————————— */
+    const navWrap = document.getElementById('navWrap');
+    window.addEventListener('scroll', () => {
+      navWrap.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* — Mobile menu ——————————————————————————————————————————— */
+    const overlay = document.getElementById('navOverlay');
+    const burger = document.getElementById('navBurger');
+    const closeBtn = document.getElementById('navClose');
+
+    burger.addEventListener('click', () => {
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+
+    function closeMenu() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    /* Close on ESC */
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    /* Smooth scroll for anchor links */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
